@@ -2,5 +2,5 @@
 .eslintcache
 *.log
 npm-debug.log*
-node_modules;r/
+node_modules/
 *.swp
