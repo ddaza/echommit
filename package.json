@@ -1,0 +1,18 @@
+{
+  "name": "echommit",
+  "version": "0.0.1",
+  "description": "echoes your commit message on the format you want",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "commit",
+    "message",
+    "git",
+    "emoji",
+    "conventional"
+  ],
+  "author": "ddaza",
+  "license": "MIT"
+}

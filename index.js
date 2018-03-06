@@ -1,0 +1,1 @@
+cons fs = require('fs');
