@@ -3,8 +3,16 @@
   "version": "0.0.1",
   "description": "echoes your commit message on the format you want",
   "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard \"src/**/*.js\"",
+    "test": "npm run lint && jest && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddaza/echomit.git"
   },
   "keywords": [
     "commit",
@@ -14,5 +22,25 @@
     "conventional"
   ],
   "author": "ddaza",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddaza/echomit/issues"
+  },
+  "homepage": "https://github.com/ddaza/echomit#readme",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "conf": "^1.3.1",
+    "inquirer": "^5.1.0",
+    "inquirer-autocomplete-prompt": "^0.12.0",
+    "meow": "^4.0.0",
+    "path-exists": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "standard": "^10.0.3"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }
