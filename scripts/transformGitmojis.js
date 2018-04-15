@@ -17,6 +17,6 @@ const gitmojis = require('../data/gitmojis.json')
   }
 
   writeFilePromise(path.resolve(__dirname, 'gitmojis.json'), gitmojiTransform(gitmojis))
-    .then(console.log.bind())
+    .then(file => console.log('Written >>', file))
     .catch(console.error.bind())
 }())

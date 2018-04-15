@@ -18,6 +18,6 @@ const conventional = require('../data/conventional.json')
   }
 
   writeFilePromise(path.resolve(__dirname, 'conventional.json'), conventionalTransform(conventional))
-    .then(console.log.bind())
+    .then(file => console.log('Written >>', file))
     .catch(console.error.bind())
 }())
