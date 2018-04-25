@@ -37,7 +37,11 @@
     "meow": "^4.0.0"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-prettier-standard": "^1.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "jest": "^22.4.2",
+    "prettier": "^1.12.1",
     "standard": "^11.0.0"
   },
   "jest": {
